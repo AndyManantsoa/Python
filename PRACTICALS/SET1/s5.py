@@ -1,7 +1,9 @@
-#2. A program that checks if a given year of format XXXX is a leap year
+#2. A program that checks if a given year is a leap year
 
 def isLeap(year):
     if year % 4 == 0:
+        return True
+    elif year%400==0:
         return True
     else:
         return False
