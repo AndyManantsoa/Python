@@ -1,0 +1,10 @@
+1. A program that converts temperatures from Fahrenheit to Celsius and vice versa.
+2. A program that calculates the area and perimeter of a rectangle.
+3. A program that generates a random password of a specified length.
+4. A program that calculates the average of a list of numbers.
+5. A program that checks if a given year is a leap year.
+6. A program that calculates the factorial of a number.
+7. A program that checks if a given string is a palindrome.
+8. A program that sorts a list of numbers in ascending or descending order.
+9. A program that generates a multiplication table for a given number.
+10. A program that converts a given number from one base to another.
