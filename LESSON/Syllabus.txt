@@ -1,0 +1,39 @@
+1 Introduction to python programing:
+    Introduction to Python and basic programming concepts, variables, data types, conditionals statements and loops 
+    Lists,Sets,Tuples,Dictionaries:
+    Working with strings, lists, sets, tuples and dictionaries, including common operations and built-in functions
+
+2 Functions :
+    Defining and using functions, including the use of arguments and return values
+    OOPS Concepts :
+        Object, class, abstraction, encapsulation, polymorphism, Inheritence.
+        Exceptions and File handling:
+        Handling exceptions and working with files
+
+3 Modules and Packages:
+    Working with modules and packages in Python
+    Introduction to popular Python libraries for specific tasks, such as data analysis, web development, or game development.
+    PyCharm IDE :
+        GIT- Git Integration with PyCharm IDE, PyTests. Python connectivity with Databases MYSQL, MongoDB CRUD operations.
+
+4 Flask Framework:
+    Introduction to Flask and web development with Python, Installation in Virtual Environment. Creation Routing App Settings
+    URL Building HTTP methods Templates Working with Static, Media Files. Sending Form Data to Template.
+    Flask App with Database connectivity Sqlite3, MySQL. Handling Exceptions and Errors Flash Message Working with Mails.
+    Authenticating and authorizing users with Flask-Login, Deploying a Flask application to a web server.
+
+5 Django Framework:
+    Introduction to Django framework, Django Project Installation in Virtual Environment. Phases in Django Project
+    Creation Create a Project.
+    Creation of Apps and their Structure. Working with ADMIN Console.
+    Creating Views URL Mapping. Template System Working with Models.
+    Form Processing static, media files, Django App Deployment.
+
+6 RESTful APIs:
+    Introduction to RESTful APIs and the REST architectural style
+    Understanding the HTTP protocol and its role in RESTful APIs
+    Designing and implementing RESTful APIs using common HTTP methods, such as GET, POST, PUT, and DELETE using URLs and resource representations
+     to identify and transfer data in RESTful APIs
+    Implementing best practices for designing and implementing RESTful APIs, such as using HTTP status codes, versioning, and error handling
+    Consuming RESTful APIs using common tools and libraries, such as cURL, Postman, and the requests library in Python
+    Building scalable and secure RESTful APIs using common frameworks and libraries Flask or FastAPI.
