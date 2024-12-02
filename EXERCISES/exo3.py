@@ -1,4 +1,4 @@
-#WAP to compare 3 numbers
+#WAP to compare the height of 3 numbers
 
 n1 = int(input("Enter 1st number: "))
 n2 = int(input("Enter 2nd number: "))
