@@ -5,3 +5,4 @@
 a="abcde"
 print(a[1:4:2])
 print(a[4:1:-1])
+print(a[0:4:0])
