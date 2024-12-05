@@ -8,3 +8,7 @@ exercises list:
 6/ WAP to implement for-loop  
 7/ WAP to find the factorial of a number
 8/ WAP to slice a string and use various string functions
+9/ WAP to use identity operator
+10/ WAP to check if a string is palindrome or not
+11/ WAP to make a multiplication table for any given number
+12/ WAP to check how many numbers are divisible by 5 from  0-100
