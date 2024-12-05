@@ -6,9 +6,7 @@ exercises list:
 4/ Write a program that calculates the average of a list of numbers
 5/ WAP to make a grade of students according to their marks in 5 subjects
 6/ WAP to implement for-loop  
-7/ WAP to find the factorial of a number
+7/ WAP to check how many numbers are divisible by 5 from  0-100
 8/ WAP to slice a string and use various string functions
 9/ WAP to use identity operator
-10/ WAP to check if a string is palindrome or not
-11/ WAP to make a multiplication table for any given number
-12/ WAP to check how many numbers are divisible by 5 from  0-100
+10/ WAP to make a simple log in authentication page using conditional statement

@@ -1,4 +1,4 @@
-#2. A program that checks if a given year is a leap year
+#A program that checks if a given year is a leap year
 
 def isLeap(year):
     if year % 4 == 0:

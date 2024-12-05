@@ -1,7 +1,10 @@
-#WAP to find the factorial of a number
+#WAP to check how many numbers are divisible by 5 from  0-100
 
-a= int(input("Enter a number"))
-c=1
-for i in range(a,1,-1):
-    c=c*i
-print(c)
+i=0
+sum =0
+while i<=100 :
+    if i%5==0 :
+        sum+=1
+    i+=1
+
+print('There are',sum, 'divisible by 5 in the range of 0 to 100')
