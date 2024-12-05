@@ -7,4 +7,4 @@ exercises list:
 5/ WAP to make a grade of students according to their marks in 5 subjects
 6/ WAP to implement for-loop  
 7/ WAP to find the factorial of a number
-8/ WAP to slice a string
+8/ WAP to slice a string and use various string functions
