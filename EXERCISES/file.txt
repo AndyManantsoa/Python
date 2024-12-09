@@ -10,3 +10,4 @@ exercises list:
 8/ WAP to slice a string and use various string functions
 9/ WAP to use identity operator
 10/ WAP to make a simple log in authentication page using conditional statement
+11/ WAP to calculate the square of even and cube of odd from 1 to 20 using list
