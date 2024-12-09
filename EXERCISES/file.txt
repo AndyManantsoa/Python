@@ -11,3 +11,9 @@ exercises list:
 9/ WAP to use identity operator
 10/ WAP to make a simple log in authentication page using conditional statement
 11/ WAP to calculate the square of even and cube of odd from 1 to 20 using list
+12/ WAP to calculate the sum of all numbers from 1 to 11 using list
+13/ with given list l=["a","b","c","d"] write a program to get this output
+    0-a 
+    1-b
+    2-c
+    3-d
