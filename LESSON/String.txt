@@ -1,0 +1,24 @@
+-> We can create string in between " "  or ' ' or  ''' ''' , and it is an array of bytes
+
+-> Syntax: a = "Hello"
+
+-> looping through String 
+        for x in "banana":
+        print(x)
+
+-> Slicing: a[start:end:gap]
+
+-> String methods:
+    - len(a): return the length of the string
+    - a.upper(): method returns the string in upper case
+    - a.lower() method returns the string in lower case
+    - a.strip() method removes any whitespace from the beginning or the end
+        lstrip() removes whitespace from left
+        rstrip() removes whitespace from right
+    - a.split(",") method splits the string into substrings if it finds instances of the separator
+        a = "Hello, World!"
+        print(a.split(",")) # returns ['Hello', ' World!']
+    - a.startswith("")/a.endswith("") : return boolean if it matches
+    - a.capitalize(): Converts the first character to upper case
+    - a.title(): Converts all of the first character of any word to upper case
+    - a.find("char")/a.index("char") : returns the index of the char, but find return error if not found and index -1

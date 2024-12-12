@@ -27,7 +27,6 @@ List is collection of disimilar elements where we can store multiple data using 
     2/ by using remove("element") : it removes the actual element as inserted parameter
     3/ by using del attribute: delete the whole variable. ex: del l;
                                 it can also delete some part using slicing: ex: del l[1:3]
-    4/
 
 -> some additional functions:
     - count(x): counts the x elements in the list (Boolean value True and False are considered as 1,0 respectively)
