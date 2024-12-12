@@ -1,4 +1,4 @@
-List is collection of similar elements where we can store multiple data using [] separated by comma
+List is collection of disimilar elements where we can store multiple data using [] separated by comma
 
 -> list is mutable and we can store multiple datatypes
 
