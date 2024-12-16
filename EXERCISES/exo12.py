@@ -1,6 +1,16 @@
 #WAP to calculate the sum of all numbers from 1 to 11 using list
 
-l=[2,4,5,33,55]
+l=[]
+
+for i in range(1,11):
+    l.append(i)
+
+print(l)
+
+for i in l:
+    if i%2==0:
+        print(i, end=", ")
+
 
 sum =0
 
