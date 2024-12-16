@@ -1,6 +1,9 @@
-List is collection of disimilar elements where we can store multiple data using [] separated by comma
+LIST:
+_____
 
--> list is mutable and we can store multiple datatypes
+-> List is collection of disimilar elements where we can store multiple data using [] separated by comma
+
+-> list is CHANGABLE/MUTABLE and we can store multiple datatypes
 
 -> we can create list with two ways:
     1/ l = []
@@ -46,3 +49,76 @@ List is collection of disimilar elements where we can store multiple data using 
     - max(value): returns the max element
     - min(value): returns the min element
 
+
+    -------------------------------------------
+TUPLES:
+_______
+
+-> Tuples are used to store multiple items in a single variable which is ORDERED and UNCHANGABLE.
+-> We cannot change, add or remove items after the tuple has been created.
+
+-> Create a tuple:
+    - t=(1,"dfa",True, 3.4)
+    - t=tuple([1,"dfa",True, 3.4])
+
+-> packing and unpacking: 
+    a,*b,c = 1,2,3,4,5,65,67,7
+    print(a,b,c)
+  O/P: 1 [2, 3, 4, 5, 65, 67] 7
+
+
+    -------------------------------------------
+
+SETS:
+_____
+
+-> Sets: Set items are unordered, unchangeable, and do not allow duplicate values.
+
+-> Creating a set:
+    - s={"abc", True, 1}
+    - s= set(("abc", True, 1))
+
+-> Adding data: 
+    - s.add("item"): append item
+    - s.update():  add items from another set into the current set
+
+-> Removing items:
+
+
+-> operations on set:
+    - union() or |
+    - intersection() or &
+    - difference() or -
+
+
+    -------------------------------------------
+
+DICTIONARIES:
+_____________
+
+-> Dictionaries: Dictionaries are used to store data values in key:value pairs
+                 which is ordered *(since python 3.7 ), changeable and do not allow duplicates
+
+-> Creating a dictionary:
+    d={
+        "name":"Andy",
+        "age": 19,
+        "isMaried": False
+    }
+
+-> Fetching:
+    - print(d["name"]) : if not present then error
+    - print(d.get("name")) : if not present then none or custom message (ex: print(d.get("home","custom message")))
+
+    # fetch keys: d.keys()
+    # fetch values: d.values()
+    # fetch both: d.items() 
+
+-> Adding data:
+    - d["size"] = "S" /if not present
+    - d["age"] =20 / overriding if present
+    - d.update({"age": 21}) 
+
+-> Removing:
+    - d.pop("name")
+    - d.popitem()
