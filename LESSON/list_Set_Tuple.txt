@@ -115,10 +115,14 @@ _____________
     # fetch both: d.items() 
 
 -> Adding data:
-    - d["size"] = "S" /if not present
-    - d["age"] =20 / overriding if present
+    - d["size"] = "S" : if not present
+    - d["age"] =20 : overriding if present
     - d.update({"age": 21}) 
 
 -> Removing:
     - d.pop("name")
-    - d.popitem()
+    - d.popitem() : remove last item
+
+-> Copy : d1=d.copy() : it will make a copy of d in d1
+
+-> Clear: d.clear
