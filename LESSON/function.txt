@@ -1,0 +1,65 @@
+# Python Functions Lesson
+
+# 1. Basic Function Definition
+def greet():
+    print("Hello, World!")
+
+# 2. Function with Parameters
+def greet_person(name):
+    print(f"Hello, {name}!")
+
+# 3. Function with Default Parameters
+def greet_with_time(name, time="morning"):
+    print(f"Good {time}, {name}!")
+
+# 4. Function with Return Value
+def add_numbers(a, b):
+    return a + b
+
+# 5. Function with Multiple Return Values
+def calculate_math(a, b):
+    add = a + b
+    subtract = a - b
+    return add, subtract
+
+# 6. Function with *args (Variable Arguments)
+def sum_all(*numbers):
+    return sum(numbers)
+
+# 7. Function with **kwargs (Keyword Arguments)
+def print_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+# Examples of using these functions
+if __name__ == "__main__":
+    # Basic function call
+    print("\n1. Basic function:")
+    greet()
+
+    # Function with parameter
+    print("\n2. Function with parameter:")
+    greet_person("Alice")
+
+    # Function with default parameter
+    print("\n3. Function with default parameter:")
+    greet_with_time("Bob")
+    greet_with_time("Carol", "evening")
+
+    # Function with return value
+    print("\n4. Function with return value:")
+    result = add_numbers(5, 3)
+    print(f"5 + 3 = {result}")
+
+    # Function with multiple returns
+    print("\n5. Function with multiple returns:")
+    addition, subtraction = calculate_math(10, 4)
+    print(f"Addition: {addition}, Subtraction: {subtraction}")
+
+    # Function with *args
+    print("\n6. Function with *args:")
+    print(f"Sum of numbers: {sum_all(1, 2, 3, 4, 5)}")
+
+    # Function with **kwargs
+    print("\n7. Function with **kwargs:")
+    print_info(name="Alice", age=25, city="New York")

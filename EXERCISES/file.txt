@@ -18,3 +18,8 @@ exercises list:
     2-c
     3-d
 14/ WAP to create a sign up page and verify that email ends with @gmail.com and password is in digit format
+15/ WAP to find a particular char in a string and count the number of occurences of that char in the string.
+16/ WAP to count how many word are present in a file
+17/ WAP to implement file handling using json and pickle.
+18/ WAP to implement simple class ad object creation.
+19/ WAP to import a module and access its members from an other file

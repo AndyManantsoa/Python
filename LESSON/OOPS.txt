@@ -1,0 +1,79 @@
+# Python Object-Oriented Programming (OOP) Lesson
+
+# 1. Basic Class Definition
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+        
+    def display_info(self):
+        return f"{self.brand} {self.model}"
+
+# 2. Inheritance
+class ElectricCar(Car):
+    def __init__(self, brand, model, battery_size):
+        super().__init__(brand, model) //to get the value from super class
+        self.battery_size = battery_size
+        
+    def get_battery_info(self):
+        return f"Battery capacity: {self.battery_size} kWh"
+
+# 3. Encapsulation
+class BankAccount:
+    def __init__(self):
+        self.__balance = 0  # Private attribute
+        
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+            
+    def get_balance(self):
+        return self.__balance
+
+# 4. Polymorphism
+class Animal:
+    def speak(self):
+        pass
+
+class Dog(Animal):
+    def speak(self):
+        return "Woof!"
+
+class Cat(Animal):
+    def speak(self):
+        return "Meow!"
+
+# 5. Class Methods and Static Methods
+class Math:
+    @staticmethod
+    def add(x, y):
+        return x + y
+        
+    @classmethod
+    def multiply(cls, x, y):
+        return x * y
+
+# Examples of usage:
+if __name__ == "__main__":
+    # Creating objects
+    my_car = Car("Toyota", "Camry")
+    print(my_car.display_info())
+    
+    tesla = ElectricCar("Tesla", "Model 3", 75)
+    print(tesla.display_info())
+    print(tesla.get_battery_info())
+    
+    # Encapsulation
+    account = BankAccount()
+    account.deposit(1000)
+    print(f"Balance: ${account.get_balance()}")
+    
+    # Polymorphism
+    dog = Dog()
+    cat = Cat()
+    print(dog.speak())
+    print(cat.speak())
+    
+    # Static and class methods
+    print(Math.add(5, 3))
+    print(Math.multiply(4, 2))

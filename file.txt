@@ -1,1 +1,0 @@
-Hello, this is a file with some words in it. We will count how many words are in this file.
