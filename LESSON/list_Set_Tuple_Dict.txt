@@ -73,6 +73,15 @@ _____
 -> Creating sets:
     - s = {"abc", True, 1}
     - s = set(["abc", True, 1])
+    - s = set()  # empty set (can't use {} as that creates empty dict)
+
+-> Set methods:
+    - add(): adds single element
+    - update(): adds multiple elements
+    - remove(): removes element (raises error if missing)
+    - discard(): removes element (no error if missing)
+    - pop(): removes and returns arbitrary element
+    - clear(): removes all elements
 
 -> Set operations:
     - union(): s1 | s2
@@ -97,7 +106,20 @@ ____________
     }
     d = dict(name="Andy", age=19)  # alternative creation
 
--> Additional Methods:
+-> Basic operations:
+    - Access: d["key"] or d.get("key")
+    - Add/Update: d["key"] = value
+    - Delete: del d["key"]
+    - Clear: d.clear()
+    - Copy: d.copy() (shallow) or deepcopy(d) (deep)
+    
+-> Dictionary methods:
+    - keys(): returns view of dictionary keys
+    - values(): returns view of dictionary values
+    - items(): returns view of key-value pairs
+    - pop(key): removes key and returns value
+    - popitem(): removes and returns last key-value pair
+    - update(): updates dict with elements from another dict
     - setdefault(key, default): gets value or sets default if key missing
     - fromkeys(sequence, value): creates dict from keys with default value
     - get(key, default): safer way to get values
