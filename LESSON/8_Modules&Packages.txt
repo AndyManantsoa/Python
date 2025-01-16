@@ -1,0 +1,53 @@
+Modules and Packages :
+---------------------
+
+Modules
+-------
+
+-> A module is a Python file containing code, functions, and variables
+    Ex:
+        File: math_operations.py
+        def add(x, y):
+            return x + y
+
+        def subtract(x, y):
+            return x - y
+
+-> To use the module:
+    import math_operations
+    result = math_operations.add(5, 3)  -> returns 8
+
+-> Different ways to import modules:
+    import math_operations as mo  #Using alias
+    from math_operations import add #Import specific function
+    from math_operations import *  #Import all (not recommended)
+
+-> Built-in Modules
+    import math (ex: print(math.pi)  #3.141592653589793)
+    import datetime
+    import random (ex: print(random.randint(1, 10)) #Random number between 1 and 10)
+
+Packages
+--------
+
+-> Packages are directories containing multiple modules
+
+-> Must include an __init__.py file (can be empty)
+
+-> Ex: package structure:
+    my_package/
+     __init__.py
+    module1.py
+    module2.py
+    subpackage/
+       __init__.py
+       module3.py
+
+-> To import from packages:
+    from my_package import module1
+    from my_package.subpackage import module3
+
+-> Creating a Package:
+    __init__.py content example:
+    This file can initialize package-level variables
+    or import common functionality
