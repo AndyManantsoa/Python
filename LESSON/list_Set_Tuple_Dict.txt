@@ -1,0 +1,110 @@
+LIST:
+_____
+
+-> List is a collection of elements that can store multiple data items using [] separated by comma
+
+-> Lists are MUTABLE (changeable) and can store multiple datatypes
+
+-> Creating lists:
+    1/ l = []  # empty list
+    2/ l = list()  # empty list using constructor
+    3/ l = [1, 2, 3]  # list with elements
+
+-> To insert values:
+    1/ l = [1, 2, 3.4, "hello", True]
+    2/ l = list([1, 2, 3.4, "hello", True])  # using constructor
+
+-> To fetch elements from list:
+    1/ By indexing: print(l[0])  # first element
+    2/ By slicing: print(l[start:end:step])  # end is exclusive
+    3/ Negative indexing: l[-1]  # last element
+
+-> To add data in a list:
+    1/ by indexing: l[2] = "Hello"  # replace existing element
+    2/ by slicing: l[1:3] = [1, 2, 3]  # replaces elements in range
+    3/ append(element): l.append("hello")  # adds single element at end
+    4/ insert(index, element): l.insert(3, "hello")  # inserts at specific position
+    5/ extend(iterable): l.extend([1,2,3])  # adds multiple elements at end
+
+-> To delete elements in a list:
+    1/ pop(index): removes element at index (default last), returns removed element
+    2/ remove(element): removes first occurrence of element
+    3/ del statement: del l[1:3]  # removes slice
+    4/ clear(): empties the list but keeps the variable
+
+-> Additional functions:
+    - count(x): counts occurrences of x
+    - index(value, start, end): finds first index of value in optional range
+    - copy methods:
+        shallow copy: l2 = l.copy() or l2 = list(l)
+        deep copy: import copy; l2 = copy.deepcopy(l)
+    - sort methods:
+        l.sort(key=None, reverse=False): in-place sorting
+        sorted(l): returns new sorted list
+    - reverse(): reverses list in-place
+    - len(l): returns list length
+    - max(l): returns maximum value
+    - min(l): returns minimum value
+    - sum(l): returns sum of numeric elements
+
+TUPLES:
+_______
+
+-> Tuples are IMMUTABLE sequences (cannot be changed after creation)
+-> More memory efficient than lists
+-> Can be used as dictionary keys (unlike lists)
+
+-> Creating tuples:
+    - t = (1, "dfa", True, 3.4)
+    - t = tuple([1, "dfa", True, 3.4])
+    - t = 1,  # single element tuple needs comma
+
+-> Methods:
+    - count(): returns number of occurrences
+    - index(): returns first index of element
+    - len(): returns length of tuple
+
+SETS:
+_____
+
+-> Sets: Unordered collection of unique elements
+-> Elements must be immutable (no lists or dictionaries)
+
+-> Creating sets:
+    - s = {"abc", True, 1}
+    - s = set(["abc", True, 1])
+
+-> Set operations:
+    - union(): s1 | s2
+    - intersection(): s1 & s2
+    - difference(): s1 - s2
+    - symmetric_difference(): s1 ^ s2
+    - issubset(): s1 <= s2
+    - issuperset(): s1 >= s2
+    - isdisjoint(): returns True if sets have no common elements
+
+DICTIONARIES:
+____________
+
+-> Key-value pairs, keys must be immutable
+-> As of Python 3.7+, dictionaries maintain insertion order
+
+-> Creating dictionaries:
+    d = {
+        "name": "Andy",
+        "age": 19,
+        "isMarried": False
+    }
+    d = dict(name="Andy", age=19)  # alternative creation
+
+-> Additional Methods:
+    - setdefault(key, default): gets value or sets default if key missing
+    - fromkeys(sequence, value): creates dict from keys with default value
+    - get(key, default): safer way to get values
+    - dict comprehension: {x: x**2 for x in range(5)}
+
+-> Nested dictionaries:
+    d = {
+        "person1": {"name": "Andy", "age": 19},
+        "person2": {"name": "Bob", "age": 20}
+    }

@@ -1,24 +1,71 @@
--> We can create string in between " "  or ' ' or  ''' ''' , and it is an array of bytes
+PYTHON STRINGS
+---------------
 
--> Syntax: a = "Hello"
+1. String Creation:
+    - Strings can be created using single quotes (''), double quotes ("") or triple quotes (''' ''')
+    - Strings are arrays of bytes representing Unicode characters
+    
+Examples:
+    str1 = 'Hello'
+    str2 = "World"
+    str3 = '''Multi-line
+            string'''
 
--> looping through String 
-        for x in "banana":
-        print(x)
+2. Accessing Characters:
+    - Strings can be accessed using index (0-based)
+    - Negative indexing starts from the end (-1)
 
--> Slicing: a[start:end:gap]
+Example:
+    text = "Python"
+    print(text[0])    # P
+    print(text[-1])   # n
 
--> String methods:
-    - len(a): return the length of the string
-    - a.upper(): method returns the string in upper case
-    - a.lower() method returns the string in lower case
-    - a.strip() method removes any whitespace from the beginning or the end
-        lstrip() removes whitespace from left
-        rstrip() removes whitespace from right
-    - a.split(",") method splits the string into substrings if it finds instances of the separator
-        a = "Hello, World!"
-        print(a.split(",")) # returns ['Hello', ' World!']
-    - a.startswith("")/a.endswith("") : return boolean if it matches
-    - a.capitalize(): Converts the first character to upper case
-    - a.title(): Converts all of the first character of any word to upper case
-    - a.find("char")/a.index("char") : returns the index of the char, but find return error if not found and index -1
+3. Looping Through String:
+    for character in "Python":
+        print(character)
+
+4. String Slicing:
+    Syntax: string[start:end:step]
+    - start: starting index (inclusive)
+    - end: ending index (exclusive)
+    - step: increment value
+
+Example:
+    text = "Python Programming"
+    print(text[0:6])     # Python
+    print(text[::2])     # Pto rgamn
+    print(text[::-1])    # gnimmargorP nohtyP
+
+5. Common String Methods:
+
+a) Length:
+    len(string) - Returns the length of the string
+    Example: len("Python")  # 6
+
+b) Case Manipulation:
+    - string.upper() - Converts to uppercase
+    - string.lower() - Converts to lowercase
+    - string.capitalize() - Capitalizes first character
+    - string.title() - Capitalizes first character of each word
+
+c) Whitespace Handling:
+    - string.strip() - Removes leading and trailing whitespace
+    - string.lstrip() - Removes leading whitespace
+    - string.rstrip() - Removes trailing whitespace
+
+d) Searching and Splitting:
+    - string.find(substring) - Returns index of substring (-1 if not found)
+    - string.index(substring) - Returns index of substring (raises error if not found)
+    - string.split(separator) - Splits string into list based on separator
+    
+e) Checking Strings:
+    - string.startswith(prefix) - Returns True if string starts with prefix
+    - string.endswith(suffix) - Returns True if string ends with suffix
+
+Example Usage:
+    text = "  Hello, World!  "
+    print(text.strip())                # "Hello, World!"
+    print(text.upper())                # "  HELLO, WORLD!  "
+    print(text.split(','))             # ['  Hello', ' World!  ']
+    print("Hello".startswith("He"))    # True
+    print("Python".find('n'))          # 5

@@ -1,22 +1,23 @@
-# Python File Handling Tutorial
+ Python File Handling
+ --------------------
 
-# 1. Opening Files
-# Syntax: open(filename, mode)
-# Modes: 'r' (read), 'w' (write), 'a' (append), 'x' (create)
-#        'b' (binary), 't' (text)
+ 1. Opening Files
+ Syntax: open(filename, mode)
+ Modes: 'r' (read), 'w' (write), 'a' (append), 'x' (create)
+        'b' (binary), 't' (text)
 
-# Opening a file for reading
-file = open('example.txt', 'r')
-content = file.read()
-file.close()
+ Opening a file for reading
+    */ Using open() function
+    file = open('example.txt', 'r')
+    content = file.read()
+    file.close()
 
-# Using 'with' statement (recommended - automatically closes file)
-with open('example.txt', 'r') as file:
+    */ Using 'with' statement (recommended - automatically closes file)
+    with open('example.txt', 'r') as file:
     content = file.read()
 
-# 2. Reading Files
-# Different methods to read files
-with open('example.txt', 'r') as file:
+2. Reading Files: Different methods to read files
+    with open('example.txt', 'r') as file:
     # Read entire file
     content = file.read()
     
@@ -30,21 +31,21 @@ with open('example.txt', 'r') as file:
     for line in file:
         print(line)
 
-# 3. Writing Files
-# Writing to a new file
+ 3. Writing Files
+ # Writing to a new file
 with open('newfile.txt', 'w') as file:
     file.write('Hello, World!\n')
     file.writelines(['Line 1\n', 'Line 2\n', 'Line 3\n'])
 
-# 4. Appending to Files
-with open('example.txt', 'a') as file:
+ 4. Appending to Files
+    with open('example.txt', 'a') as file:
     file.write('Appending new content\n')
 
-# 5. File Methods
-# Common file methods demonstration
-with open('example.txt', 'r') as file:
-    # Get current position
-    position = file.tell()
+ 5. File Methods
+ # Common file methods demonstration
+    with open('example.txt', 'r') as file:
+        Get current position
+        position = file.tell()
     
     # Move to specific position
     file.seek(0)
@@ -55,24 +56,15 @@ with open('example.txt', 'r') as file:
     # Check if file is writable
     is_writable = file.writable()
 
-# 6. Error Handling
-try:
-    with open('nonexistent.txt', 'r') as file:
-        content = file.read()
-except FileNotFoundError:
-    print("File not found!")
-except IOError:
-    print("Error reading the file!")
-
-# 7. Working with Binary Files
-# Reading/Writing binary files
+ 6. Working with Binary Files
+ # Reading/Writing binary files
 with open('binary.bin', 'wb') as file:
     file.write(b'Binary content')
 
 with open('binary.bin', 'rb') as file:
     binary_content = file.read()
 
-# 8. File Information
+ 7. File Information
 import os
 
 # Check if file exists

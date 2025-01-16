@@ -1,4 +1,5 @@
-# Python Functions Lesson
+Functions:
+----------
 
 # 1. Basic Function Definition
 def greet():

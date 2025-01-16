@@ -1,0 +1,78 @@
+# Python Exceptions Tutorial
+
+# 1. Basic Try-Except
+try:
+    # Attempting to divide by zero
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Error: Division by zero!")
+
+# 2. Multiple Exceptions
+try:
+    number = int("abc")  # This will raise ValueError
+except ValueError:
+    print("Invalid conversion")
+except ZeroDivisionError:
+    print("Division by zero!")
+except:
+    print("Something else went wrong")
+
+# 3. Try-Except-Else
+try:
+    number = int("123")
+except ValueError:
+    print("Invalid conversion")
+else:
+    print(f"Conversion successful! Number is {number}")
+
+# 4. Try-Except-Finally
+try:
+    file = open("test.txt")
+except FileNotFoundError:
+    print("File not found")
+finally:
+    print("This will always execute")
+
+# 5. Raising Exceptions
+def check_age(age):
+    if age < 0:
+        raise ValueError("Age cannot be negative")
+    return age
+
+# 6. Custom Exceptions
+class CustomError(Exception):
+    def __init__(self, message):
+        self.message = message
+        super().__init__(self.message)
+
+# Example using custom exception
+try:
+    raise CustomError("This is a custom error")
+except CustomError as e:
+    print(f"Caught custom error: {e}")
+
+# 7. Assert Statement
+def divide(a, b):
+    assert b != 0, "Divisor cannot be zero"
+    return a / b
+
+# Practice Examples
+if __name__ == "__main__":
+    # Example 1: Basic error handling
+    try:
+        result = divide(10, 0)
+    except AssertionError as e:
+        print(f"Error: {e}")
+
+    # Example 2: File handling with exception
+    try:
+        with open("nonexistent.txt", "r") as file:
+            content = file.read()
+    except FileNotFoundError:
+        print("The file does not exist")
+
+    # Example 3: Type error handling
+    try:
+        text = "hello" + 5
+    except TypeError:
+        print("Cannot add string and integer")
