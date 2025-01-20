@@ -3,7 +3,7 @@ _____
 
 -> List is a collection of elements that can store multiple data items using [] separated by comma
 
--> Lists are MUTABLE (changeable) and can store multiple datatypes
+-> Lists are MUTABLE (changeable) and can store multiple datatypes in ordered way
 
 -> Creating lists:
     1/ l = []  # empty list
@@ -51,7 +51,9 @@ TUPLES:
 _______
 
 -> Tuples are IMMUTABLE sequences (cannot be changed after creation)
+
 -> More memory efficient than lists
+
 -> Can be used as dictionary keys (unlike lists)
 
 -> Creating tuples:
