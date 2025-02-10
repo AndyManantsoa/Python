@@ -4,10 +4,10 @@
 
 a = "Manantsoa ClaudiNo"
 
-print(a[1:4:2].upper())
+print(a[1:8:2].upper())
 print(a[4:1:-1].lower())
 print(a[-1:-4:-1].title())  # first char is in capitalx
-print(a.index("n", 3))  # returns error if char is not find,
+print(a.index("n", 3))  # returns error if char is not found,
 print(a.lower().count("n"))
 
 try:
@@ -15,7 +15,7 @@ try:
 except ValueError:
     print("Error")
 
-print(a.find("j"))  # returns -1 if char is not find
+print(a.find("j"))  # returns -1 if char is not found
 
 # membership operator
 print("f" in a)

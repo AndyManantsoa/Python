@@ -8,6 +8,11 @@ for i in range (0,6,2):
 for i in range (10,0,-1):
     print(i)
 
+print("aaaaa")
+
+for i in range (4,0,-1):
+    print(i)
+
 for i in "Manantsoa":
     print(i, end= ", ")
 
